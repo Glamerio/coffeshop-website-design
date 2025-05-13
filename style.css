@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+
+:root {
+    --marsh: #ddddc7;
+    --text: #1d1d1d;
+    --white: #f5f5dc;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    font-family: Arial, sans-serif;
+}
+
+.playwrite-dk-loopet-victoria {
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a,
+i,
+li,
+ul,
+ol {
+    text-decoration: none;
+    list-style: none;
+    color: var(--text);
+}
+
+.navbar {
+    z-index: 1000;
+    height: fit-content;
+    padding: 8px 0;
+    background: linear-gradient(90deg, #4e3a23 0%, #2d2217 100%);
+    box-shadow: 0 2px 16px 0 rgba(60, 40, 10, 0.10);
+    border-bottom: 2px solid #a89b7c33;
+    top: 0;
+    padding: 0 20%;
+    display: flex;
+    justify-content: center;
+}
+
+nav.navbar ul.navButtonsBar {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 16px;
+}
+
+nav.navbar ul.navButtonsBar li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar ul.navButtonsBar li > a {
+    color: #ffe6b3 !important;
+    text-shadow: 0 2px 8px #00000033;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 24px;
+    transition: color 0.2s, transform 0.2s;
+    display: inline-block;
+    letter-spacing: 0.02em;
+}
+
+nav.navbar ul.navButtonsBar li > a.logo {
+    font-size: 22px !important;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-weight: bold;
+    background: none;
+    padding-left: 0;
+}
+
+nav.navbar ul.navButtonsBar li > a:hover {
+    color: #ffb347 !important;
+    transform: scale(1.08) translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    nav.navbar ul.navButtonsBar {
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+    nav.navbar ul.navButtonsBar li > a {
+        font-size: 15px;
+        padding: 8px 10px;
+    }
+    nav.navbar ul.navButtonsBar li > a.logo {
+        font-size: 18px !important;
+    }
+}
+
+main {
+    /* margin-top: 80px; */
+}
+
+section {
+    width: 100%;
+    height: fit-content;
+}
+
+.margin_body {
+    margin: 0 20%;
+}
+
+#image_1 {
+    width: 100%;
+    height: 720px;
+    background-image: url("pexels-apgpotr-683039.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    color: var(--white);
+    text-shadow: -4px -4px 4px #000000f8;
+}
+
+.title {
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 32px;
+    font-style: normal;
+}
+
+.about {
+    padding: 6%;
+    padding-bottom: 3%;
+    display: block;
+}
+
+.paragraph {
+    width: 50%;
+    font-size: 20px;
+}
+
+.paragraph-left {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.paragraph-right {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: right;
+    margin-top: 10rem;
+}
+
+.paragraph-1-img {
+    background: url("coffee-shop.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 240px;
+    width: 40%;
+    transform: rotate(6deg);
+    border-radius: 8px;
+    border: 4px #5c3d0f dashed;
+}
+
+.paragraph-2-img {
+    background: url("bitty_and_beaus_coffee_040718_1523121060870_5304315_ver1.0_640_360.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 240px;
+    width: 40%;
+    transform: rotate(-6deg);
+    border-radius: 8px;
+    border: 4px #5c3d0f dashed;
+}
+
+.section2 {
+    padding: 1rem 0;
+    background-color: var(--marsh);
+    border-radius: 32px;
+}
+
+.section3 {
+    padding: 5% 0;
+}
+
+.container {
+    max-width: auto;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+}
+
+.menu_best_sellers {
+    width: 100%;
+}
+
+.bs_l {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.best_sellers {
+    margin: 2% 0;
+    width: 100%;
+    max-width: 400px;
+    min-width: 220px;
+    min-height: 180px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--marsh) 80%, #fffbe6 100%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 24px 0 rgba(60, 40, 10, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    gap: 16px;
+}
+
+.best_sellers:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px 0 rgba(60, 40, 10, 0.16);
+}
+
+.best_s_image_drink,
+.best_s_image_dessert {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 2px 8px 0 rgba(60, 40, 10, 0.10);
+}
+
+.best_s_image_drink {
+    background-image: url(coffee-cup-icon-free-vector.jpg);
+}
+
+.best_s_image_dessert {
+    background-image: url("free-desserts-icon-download-in-svg-png-gif-file-formats--ice-cream-cup-cake-sweet-dessert-service-food-services-pack-icons-1569366.webp");
+    background-size: contain;
+    background-color: var(--white);
+}
+
+.best_s_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.best_s_title {
+    font-family: "Playwrite DK Loopet", cursive;
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.best_s_price {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.old_price {
+    font-size: 16px;
+    text-decoration: line-through;
+    font-style: italic;
+    color: #a89b7c;
+}
+
+.new_price {
+    font-size: 22px;
+    color: #5c3d0f;
+    font-weight: bold;
+}
+
+.go_menu {
+    transition: all 0.2s;
+}
+
+.go_menu:hover {
+    transform: translateX(10px);
+}
+
+footer {
+    height: 240px;
+    background: linear-gradient(135deg, #2d2217 60%, #4e3a23 100%);
+    box-shadow: 0 -2px 24px 0 rgba(60, 40, 10, 0.10);
+    border-top: 2px solid #a89b7c33;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0;
+    font-size: 18px;
+    text-align: center;
+    gap: 12px;
+    letter-spacing: 0.02em;
+}
+
+.footer-logo {
+    font-family: "Playwrite DK Loopet", cursive;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+    color: #ffe6b3;
+    text-shadow: 0 2px 8px #00000033;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer-links a {
+    color: #ffe6b3;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 18px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.03);
+    transition: color 0.2s, background 0.2s, transform 0.2s;
+    position: relative;
+}
+
+.footer-links a:hover {
+    color: #ffb347;
+    background: rgba(255, 255, 255, 0.10);
+    transform: scale(1.08) translateY(-2px);
+    box-shadow: 0 2px 8px 0 #00000022;
+}
+
+.footer-links a:not(:last-child)::after {
+    content: "|";
+    color: #a89b7c;
+    margin-left: 18px;
+    margin-right: 0;
+    font-weight: 300;
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.footer-copy {
+    font-size: 15px;
+    color: #e0d6c3;
+    opacity: 0.8;
+    margin-top: 12px;
+}
+
+/* Responsive footer & kartlar */
+@media (max-width: 1024px) {
+    .margin_body {
+        margin: 0 5%;
+    }
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .navButtonsBar {
+        width: 100%;
+    }
+
+    .paragraph,
+    .paragraph-left,
+    .paragraph-right {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        text-align: left;
+    }
+
+    .paragraph-1-img,
+    .paragraph-2-img {
+        width: 100%;
+        height: 180px;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 0 2%;
+    }
+
+    .navButtonsBar {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .logo,
+    .navButtons a {
+        color: #ffe6b3 !important;
+    }
+
+    .logo {
+        font-size: 18px !important;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    #image_1 {
+        font-size: 20px;
+        height: 120px;
+        color: transparent !important;
+        text-shadow: none !important;
+    }
+
+    .paragraph {
+        font-size: 14px;
+    }
+
+    .best_sellers {
+        max-width: 100%;
+        min-width: 0;
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .best_s_image_drink,
+    .best_s_image_dessert {
+        width: 64px;
+        height: 64px;
+    }
+
+    .best_s_title {
+        font-size: 16px;
+    }
+
+    .new_price {
+        font-size: 16px;
+    }
+
+    .old_price {
+        font-size: 12px;
+    }
+
+    .bs_l {
+        gap: 12px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 16px 0;
+        height: auto;
+    }
+
+    .footer-logo {
+        font-size: 18px;
+    }
+
+    .footer-links {
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .footer-links a {
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+
+    .footer-links a:not(:last-child)::after {
+        display: none;
+    }
+
+    .footer-copy {
+        font-size: 12px;
+    }
+}

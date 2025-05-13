@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Loader styles */
+        #loader-bg {
+            position: fixed;
+            z-index: 9999;
+            top: 0; left: 0; right: 0; bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg, #2d2217 60%, #4e3a23 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.4s;
+        }
+        .loader-cup {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            border: 6px solid #ffe6b3;
+            border-top: 6px solid #a89b7c;
+            animation: spin-cup 1s linear infinite;
+            margin-bottom: 24px;
+        }
+        @keyframes spin-cup {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loader-title {
+            color: #ffe6b3;
+            font-family: "Playwrite DK Loopet", cursive;
+            font-size: 2rem;
+            letter-spacing: 0.04em;
+            text-shadow: 0 2px 8px #00000033;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader-bg">
+        <div class="loader-cup"></div>
+        <div class="loader-title">Victoria Arduino</div>
+    </div>
+
+    <main>
+        <div class="section section_1">
+            <div class="imageClass">
+                <div id="image_1">Victoria Arduino</div>
+            </div>
+            <nav class="navbar" aria-label="Main Navigation">
+                <ul class="navButtonsBar">
+                    <li><a href="#" class="logo playwrite-dk-loopet-victoria" aria-label="Victoria Arduino Ana Sayfa">Victoria Arduino</a></li>
+                    <li><a href="#about" class="navButtons" aria-label="Hakkımızda">About</a></li>
+                    <li><a href="#address" class="navButtons" aria-label="Adres">Address</a></li>
+                    <li><a href="#menu" class="navButtons playwrite-dk-loopet-victoria" aria-label="En Çok Satanlar">Best Sells</a></li>
+                    <li><a href="/menu.html" class="navButtons" aria-label="Menü">Menu</a></li>
+                </ul>
+            </nav>
+            <div id="about" class="margin_body about">
+                <div class="title">Whats Our Goal</div>
+                <div class="paragraph-x paragraph-left">
+                    <div class="paragraph">&emsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Expedita alias ad
+                        aliquam
+                        reprehenderit exercitationem adipisci, repellat ut molestias repudiandae nesciunt fugit
+                        consequatur
+                        natus asperiores sapiente, voluptatem corrupti quam quo dolor? Quo quas facere quis fugiat porro
+                        minus
+                        atque eligendi dignissimos placeat quidem! Iste exercitationem ducimus itaque ullam distinctio
+                        fuga,
+                        magni recusandae, nulla perferendis aperiam quam quasi mollitia facere, aspernatur consequuntur.
+                        Unde
+                        sint laudantium maxime!</div>
+                    <div class="paragraph-1-img"></div>
+                </div>
+                <div class="paragraph-x paragraph-right">
+                    <div class="paragraph-2-img"></div>
+                    <div class="paragraph">&emsp;
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dolore, ea ducimus, assumenda
+                        incidunt error asperiores culpa est hic, omnis quibusdam fuga? Quos dignissimos modi, maxime
+                        dolore
+                        laudantium nisi voluptates magnam sapiente recusandae iusto consequuntur exercitationem libero
+                        cum
+                        consequatur voluptate maiores consectetur quibusdam accusantium optio! Optio numquam magnam
+                        aspernatur dicta maiores, consequatur tenetur natus laboriosam vitae? Illo minima voluptatem
+                        dicta
+                        quo nesciunt ullam beatae.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="address" style="padding-bottom:5%;" class="section section2">
+            <div class="margin_body">
+                <div class="title" style="padding:5% 0;">Our Location</div>
+                <div class="container">
+                    <h1>Victoria Arduino</h1>
+                    <p><strong>Address:</strong> İstiklal Caddesi No:42, Beyoğlu, İstanbul, Türkiye</p>
+                    <h2>Our Location</h2>
+                    <iframe
+                        src="https://www.google.com/maps?q=İstiklal+Caddesi+No:42,+Beyoğlu,+İstanbul,+Türkiye&output=embed"
+                        allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div id="menu" class="section section3">
+            <div class="margin_body">
+                <div class="title">Best Sellers</div>
+                <div class="menu_best_sellers">
+                    <div class="bs_l bs_l1">
+
+                        <div class="best_sellers">
+                            <div class="best_s_image_drink"></div>
+                            <div class="best_s_info">
+                                <div class="best_s_title">Lorem, ipsum</div>
+                                <div class="best_s_price">
+                                    <div class="old_price">2.99 $</div>
+                                    <div class="new_price">1.99 $</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best_sellers">
+                            <div class="best_s_image_drink"></div>
+                            <div class="best_s_info">
+                                <div class="best_s_title">Lorem, ipsum</div>
+                                <div class="best_s_price">
+                                    <div class="new_price">2.20 $</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="bs_l bs_l2">
+                        <div class="best_sellers">
+                            <div class="best_s_image_dessert"></div>
+                            <div class="best_s_info">
+                                <div class="best_s_title">Lorem, ipsum</div>
+                                <div class="best_s_price">
+                                    <div class="new_price">4.99 $</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="best_sellers">
+                            <div class="best_s_image_dessert"></div>
+                            <div class="best_s_info">
+                                <div class="best_s_title">Lorem, ipsum</div>
+                                <div class="best_s_price">
+                                    <div class="old_price">3.99 $</div>
+                                    <div class="new_price">2.99 $</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="/menu.html">
+                    <div class="title go_menu">Go to Menu ►</div>
+                </a>
+
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-logo">Victoria Arduino</div>
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#address">Address</a>
+            <a href="#menu">Best Sellers</a>
+            <a href="/menu.html">Menu</a>
+        </div>
+        <div class="footer-copy">&copy; 2025 Victoria Arduino. All rights reserved.</div>
+    </footer>
+    <script>
+        // Loader hide logic
+        window.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                const loader = document.getElementById('loader-bg');
+                if(loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(function() { loader.style.display = 'none'; }, 400);
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
